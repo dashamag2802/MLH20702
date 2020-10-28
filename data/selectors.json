@@ -3,5 +3,9 @@
   "name": "#name",
   "gender": ".ant-radio-input",
   "age": "#age",
-  "story": "#story"
+  "story": "#story",
+  "header": "h3",
+  "description": "//h3/following-sibling::p",
+  "image": "//label[contains(text(),'5. Upload an image (optional)')]",
+  "submitButton": ".ant-btn"
 }
