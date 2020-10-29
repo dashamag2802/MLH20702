@@ -13,7 +13,7 @@ describe('My Little Hero', function () {
         });
 
     });
-
+/*
     describe('Labels for page header exist', function () {
 
         it('TC-010 Label for page header', function () {      //TC-002
@@ -70,6 +70,70 @@ describe('My Little Hero', function () {
             expect(text).toEqual(exp.submitButtonName);
         });
 
+    });
+*/
+    describe('Required elements are present and correct', function () {
+
+        it('TC-018 Label for Name placeholder = Hero\'s name', function () {    //TC-013
+            const text = $(sel.name).getAttribute('placeholder');
+            expect(text).toEqual(exp.namePlaceholderName);
+        });
+
+        it('TC-019 Field for Gender choice HE', function () {      //TC-023.1
+            const text = $$(sel.gender)[0].getText();
+            expect(text).toEqual(exp.genderHe);
+        });
+
+        it('TC-020 Label for Gender choice HE', function () {    //TC-023.1
+            const text = $$(sel.gender)[0].isDisplayed();
+            expect(text).toEqual(true);
+        });
+
+        it('TC-021 Field for Gender choice SHE', function () {      //TC-023.2
+            const text = $$(sel.gender)[1].getText();
+            expect(text).toEqual(exp.genderShe);
+        });
+
+        it('TC-022 Label for Gender choice SHE', function () { //TC-023.2
+            const text = $$(sel.gender)[1].isDisplayed();
+            expect(text).toEqual(true);
+        });
+
+        it('TC-023 Field for Gender choice IT', function () {      //TC-023.3
+            const text = $$(sel.gender)[2].getText();
+            expect(text).toEqual(exp.genderIt);
+        });
+
+        it('TC-024 Label for Gender choice IT', function () { //TC-023.3
+            const text = $$(sel.gender)[2].isDisplayed();
+            expect(text).toEqual(true);
+        });
+
+        it('TC-025 Label for age placeholder = Hero\'s age', function () {    //TC-032
+            const text = $(sel.age).getAttribute('placeholder');
+            expect(text).toEqual(exp.agePlaceholderName);
+        });
+
+        it('TC-026 Label for Type of the story = Type of the story', function () {      //TC-048
+            const label = $(sel.story).getText();
+            expect(label).toEqual(exp.typeStoryPlaceholderName);
+        });
+/*
+        it('TC-027 Label for Image placeholder = drag and drop your image here or browse', function () {    //TC-057
+            const text = $(sel.image).getAttribute('title');
+            expect(text).toEqual(exp.imageName);
+        });
+
+        it('TC-028 Label for Image upload field', function () {      //TC-129a
+            const label = $(sel.image).isDisplayed();
+            expect(label).toEqual(true);
+        });
+
+        it('TC-029 Label for Image upload field = 5', function () {    //TC-129b
+            const text = $(sel.image).getAttribute('title');
+            expect(text).toEqual(exp.imageName);
+        });
+*/
     });
 
 });

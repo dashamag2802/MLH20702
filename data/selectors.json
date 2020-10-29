@@ -1,9 +1,9 @@
 {
   "label": ".ant-form-item-required",
   "name": "#name",
-  "gender": ".ant-radio-input",
+  "gender": ".ant-radio-wrapper",
   "age": "#age",
-  "story": "#story",
+  "story": ".ant-select-selection-placeholder",
   "header": "h3",
   "description": "//h3/following-sibling::p",
   "image": "//label[contains(text(),'5. Upload an image (optional)')]",

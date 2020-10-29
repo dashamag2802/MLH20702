@@ -6,5 +6,11 @@
   "headerName": "My Little Hero",
   "descriptionName": "Let's create your own HERO! It's super easy with our application!",
   "imageName": "5. Upload an image (optional)",
-  "submitButtonName": "Create"
+  "submitButtonName": "Create",
+  "namePlaceholderName": "Hero's name",
+  "genderHe": "he",
+  "genderShe": "she",
+  "genderIt": "it",
+  "agePlaceholderName": "Hero's age",
+  "typeStoryPlaceholderName": "Type of the story"
 }
