@@ -12,5 +12,7 @@
   "genderShe": "she",
   "genderIt": "it",
   "agePlaceholderName": "Hero's age",
-  "typeStoryPlaceholderName": "Type of the story"
+  "typeStoryPlaceholderName": "Type of the story",
+  "imagePlaceholderName": "drag and drop your image here or browse",
+  "tryAgainName": "Try again!"
 }

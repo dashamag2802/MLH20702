@@ -7,5 +7,9 @@
   "header": "h3",
   "description": "//h3/following-sibling::p",
   "image": "//label[contains(text(),'5. Upload an image (optional)')]",
-  "submitButton": ".ant-btn"
+  "submitButton": ".ant-btn",
+  "imagePlaceholder": "//span[contains(@class,'anticon-plus')]/following-sibling::div",
+  "tryAgain": "//a[contains(@class,'btn-primary')]",
+  "storyClick": ".ant-select-show-arrow",
+  "storyType": ".ant-select-item-option"
 }
