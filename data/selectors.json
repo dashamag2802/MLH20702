@@ -1,9 +1,12 @@
 {
+  "homePage": "https://qa-apps.netlify.app/app_my_hero",
   "label": ".ant-form-item-required",
   "name": "#name",
-  "gender": ".ant-radio-wrapper",
+  "gender": ".ant-radio",
+  "genderType": ".ant-radio-wrapper",
   "age": "#age",
-  "story": ".ant-select-selection-placeholder",
+  "story": ".ant-select-selector",
+  "storyPlaceholder": ".ant-select-selection-placeholder",
   "header": "h3",
   "description": "//h3/following-sibling::p",
   "image": "//label[contains(text(),'5. Upload an image (optional)')]",
@@ -11,5 +14,8 @@
   "imagePlaceholder": "//span[contains(@class,'anticon-plus')]/following-sibling::div",
   "tryAgain": "//a[contains(@class,'btn-primary')]",
   "storyClick": ".ant-select-show-arrow",
-  "storyType": ".ant-select-item-option"
+  "storyType": ".ant-select-item-option",
+  "storyContent": ".ant-card-body",
+  "storyHeader": ".mb-4",
+  "storyText": ".card-text"
 }
