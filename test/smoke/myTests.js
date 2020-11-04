@@ -1,10 +1,9 @@
-
 const sel = require('../../data/selectors.json');
 const exp = require('../../data/expected.json');
 const val = require('../../data/values.json');
 
 describe('My Little Hero', function () {
-/*
+
     describe('Getting to the page', function () {
 
         it('TC-001 Title is correct ', function () {          //TC-001
@@ -255,10 +254,8 @@ describe('My Little Hero', function () {
 
     });
 
- */
-
     describe('Check story content', function () {
-/*
+
         it('TC-044 Content of the story appear after 1-4 are filled in', function () {  //TC-086
             browser.url('');
             const inputName = $(sel.name).setValue("Hero");
@@ -292,7 +289,7 @@ describe('My Little Hero', function () {
             expect(storyText).toHaveTextContaining('His');
         });
 
- */
+
         const path = require('path');
         it('TC-045 Content of the story match with selections after 1-5 are filled in', function () {  //TC-087
             browser.url('');
@@ -301,7 +298,7 @@ describe('My Little Hero', function () {
             const inputAge = $(sel.age).setValue(1);
             const click = $(sel.storyClick).click();
             const inputStory = $$(sel.storyType)[0].click();
-            /*
+
             const storyName = $(sel.storyHeader);
             expect(storyName).toHaveTextContaining('Hero');
             const storyText = $$(sel.storyText)[0];
@@ -313,7 +310,7 @@ describe('My Little Hero', function () {
             expect(storyText).toHaveTextContaining('one year old');
             expect(storyText).toHaveTextContaining('His');
 
-             */
+
             const image = $(sel.imageUpload);
             const filePath = path.join(__dirname, '../../data/cart.png');
             const remoteFilePath = browser.uploadFile(filePath);
@@ -331,6 +328,7 @@ describe('My Little Hero', function () {
     });
 
 });
+
 
 
 

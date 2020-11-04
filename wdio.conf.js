@@ -22,6 +22,9 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
+        './test/smoke/labels.js',
+        './test/smoke/myTests.js',
+        './test/smoke/inputsJulia.js'
         // 'path/to/excluded/files'
     ],
     //
