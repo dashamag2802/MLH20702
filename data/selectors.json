@@ -12,6 +12,7 @@
   "image": "//label[contains(text(),'5. Upload an image (optional)')]",
   "submitButton": ".ant-btn",
   "imagePlaceholder": "//span[contains(@class,'anticon-plus')]/following-sibling::div",
+  "imageUpload": ".ant-upload input",
   "tryAgain": "//a[contains(@class,'btn-primary')]",
   "storyClick": ".ant-select-show-arrow",
   "storyType": ".ant-select-item-option",

@@ -258,7 +258,7 @@ describe('My Little Hero', function () {
  */
 
     describe('Check story content', function () {
-
+/*
         it('TC-044 Content of the story appear after 1-4 are filled in', function () {  //TC-086
             browser.url('');
             const inputName = $(sel.name).setValue("Hero");
@@ -270,6 +270,8 @@ describe('My Little Hero', function () {
             const storyContent = $(sel.storyContent).isDisplayed();
             expect(storyContent).toEqual(true);
         });
+
+
 
         it('TC-045 Content of the story match with selections after 1-4 are filled in', function () {  //TC-087
             browser.url('');
@@ -288,6 +290,42 @@ describe('My Little Hero', function () {
             expect(storyText).toHaveTextContaining('his');
             expect(storyText).toHaveTextContaining('one year old');
             expect(storyText).toHaveTextContaining('His');
+        });
+
+ */
+        const path = require('path');
+        it('TC-045 Content of the story match with selections after 1-5 are filled in', function () {  //TC-087
+            browser.url('');
+            const inputName = $(sel.name).setValue("Hero");
+            const inputGender = $$(sel.gender)[0].click();
+            const inputAge = $(sel.age).setValue(1);
+            const click = $(sel.storyClick).click();
+            const inputStory = $$(sel.storyType)[0].click();
+            /*
+            const storyName = $(sel.storyHeader);
+            expect(storyName).toHaveTextContaining('Hero');
+            const storyText = $$(sel.storyText)[0];
+            expect(storyText).toHaveTextContaining('Hero');
+            expect(storyText).toHaveTextContaining('he');
+            expect(storyText).toHaveTextContaining('He');
+            expect(storyText).toHaveTextContaining('his');
+
+            expect(storyText).toHaveTextContaining('one year old');
+            expect(storyText).toHaveTextContaining('His');
+
+             */
+            const image = $(sel.imageUpload);
+            const filePath = path.join(__dirname, '../../data/cart.png');
+            const remoteFilePath = browser.uploadFile(filePath);
+            browser.execute(function () {
+                document.getElementsByTagName('input')[6].style.display = "block";
+            })
+            image.waitForDisplayed();
+            browser.pause(3000);
+            image.setValue(remoteFilePath);
+            browser.pause(3000);
+            const create = $(sel.submitButton).click();
+            browser.pause(3000);
         });
 
     });
