@@ -6,5 +6,13 @@
     "it": 2
   },
   "age": 123,
-  "storyType": 6
+  "storyType": {
+    "OvercomingTheMonster": 0,
+    "Rebirth": 1,
+    "Quest": 2,
+    "JourneyAndReturn": 3,
+    "RagsAndRiches": 4,
+    "Tragedy": 5,
+    "Comedy": 6
+  }
 }

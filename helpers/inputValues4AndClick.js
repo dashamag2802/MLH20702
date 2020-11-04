@@ -1,12 +1,12 @@
 const sel = require('../data/selectors.json');
 
 function inputValues4AndClick (name, gender, age, storyType){
-    $(sel.name).setValue(name);
-    $$(sel.gender)[gender].click();
-    $(sel.age).setValue(age);
-    $(sel.storyClick).click();
-    $$(sel.storyType)[storyType].click();
-    $(sel.submitButton).click();
+    $(sel.nameK).setValue(name);
+    $$(sel.genderK)[gender].click();
+    $(sel.ageK).setValue(age);
+    $(sel.storyClickK).click();
+    $$(sel.storyTypeK)[storyType].click();
+    $(sel.submitButtonK).click();
 }
 
 module.exports = inputValues4AndClick;
