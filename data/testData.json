@@ -1,11 +1,22 @@
 {
-  "name": "LadyBug",
+  "name": {
+    "LadyBug": "LadyBug",
+    "Hero": "Hero",
+    "numbers": "0123456789",
+    "specialChar": " -+-/*,.?#$%@&{}()[]\"`~|\\ <>:;"
+  },
   "gender": {
     "he": 0,
     "she": 1,
-    "it": 2
+    "it": 2,
+    "valueHe": "he",
+    "valueShe": "she",
+    "valueIt": "it"
   },
-  "age": 123,
+  "age": {
+    "a123": 123,
+    "a1": 1
+  },
   "storyType": {
     "OvercomingTheMonster": 0,
     "Rebirth": 1,
@@ -14,5 +25,13 @@
     "RagsAndRiches": 4,
     "Tragedy": 5,
     "Comedy": 6
+  },
+  "imageChoice": {
+    "PNG200px": "PNG200px.png",
+    "PNG500px": "PNG500px.png",
+    "PNGMore500px": "PNGmore500px.png",
+    "JPEG200px": "JPEG200px.jpg",
+    "JPEG500px": "JPEG500px.jpg",
+    "JPEGMore500px": "JPEGmore500px.jpg"
   }
 }

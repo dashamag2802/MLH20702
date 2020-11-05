@@ -13,6 +13,13 @@
   "genderIt": "it",
   "agePlaceholderName": "Hero's age",
   "typeStoryPlaceholderName": "Type of the story",
+  "OvercomingTheMonster": "Overcoming the Monster",
+  "Rebirth": "Rebirth",
+  "Quest": "Quest",
+  "JourneyAndReturn": "Journey and Return",
+  "RagsAndRiches": "Rags and Riches",
+  "Tragedy": "Tragedy",
+  "Comedy": "Comedy",
   "imagePlaceholderName": "drag and drop your image here or browse",
   "tryAgainName": "Try again!"
 }

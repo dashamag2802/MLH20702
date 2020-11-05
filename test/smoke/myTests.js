@@ -197,7 +197,7 @@ describe('My Little Hero', function () {  //define suite title by passing a stri
             expect(text).toEqual(val.genderChoice);
         });
 
-        it('TC-036 Input 1 to Age field', function () {      //TC-033
+        it('TC-036 Input 1 to Age input field', function () {      //TC-033
             browser.url('');
             const input = $(sel.ageK).setValue(1);
             const value = $(sel.ageK).getValue();
@@ -318,6 +318,19 @@ describe('My Little Hero', function () {  //define suite title by passing a stri
 });
 
 
+/*
+it('TC-021 Create button is clickable after 1-4 are filled in', function () {
+    browser.url('');
+    const inputName = $(sel.nameK).setValue("LadyBug");
+    const inputGender = $$(sel.genderK)[1].click();
+    const inputAge = $(sel.ageK).setValue(123);
+    const click = $(sel.storyClickK).click();
+    const inputStory = $$(sel.storyTypeK)[6].click();
+    const create = $(sel.submitButtonK).isEnabled();
+    expect(create).toEqual(true);
+});
+
+ */
 
 
 
