@@ -54,18 +54,18 @@ describe('Inputs', function () {
         });
 
         it('TC-024 Label for Gender choice = HE', function () {      //TC-023.1
-            const text = $$(sel.genderTypeK)[data.gender.he].getAttribute('value');
-            expect(text).toEqual(data.gender.valueHe);
+            const text = $$(sel.genderTypeK)[data.gender.he[0]].getAttribute('value');
+            expect(text).toEqual(data.gender.he[1]);
         });
 
         it('TC-025 Label for Gender choice = SHE', function () {      //TC-023.2
-            const text = $$(sel.genderTypeK)[data.gender.she].getAttribute('value');
-            expect(text).toEqual(data.gender.valueShe);
+            const text = $$(sel.genderTypeK)[data.gender.she[0]].getAttribute('value');
+            expect(text).toEqual(data.gender.she[1]);
         });
 
         it('TC-026 Label for Gender choice = IT', function () {      //TC-023.3
-            const text = $$(sel.genderTypeK)[data.gender.it].getAttribute('value');
-            expect(text).toEqual(data.gender.valueIt);
+            const text = $$(sel.genderTypeK)[data.gender.it[0]].getAttribute('value');
+            expect(text).toEqual(data.gender.it[1]);
         });
 
         it('TC-027 Text for age placeholder = Hero\'s age', function () {    //TC-032
@@ -120,21 +120,21 @@ describe('Inputs', function () {
 
         it('TC-034 Gender choice click on He', function () {      //TC-024
             browser.url('');
-            const input = $$(sel.genderTypeK)[data.gender.he].click();
-            const text = $$(sel.genderTypeK)[data.gender.he].getAttribute('value');
-            expect(text).toEqual(data.gender.valueHe);
+            const input = $$(sel.genderTypeK)[data.gender.he[0]].click();
+            const text = $$(sel.genderTypeK)[data.gender.he[0]].getAttribute('value');
+            expect(text).toEqual(data.gender.he[1]);
         });
 
         it('TC-035 Gender choice click on She', function () {      //TC-025
-            const input = $$(sel.genderTypeK)[data.gender.she].click();
-            const text = $$(sel.genderTypeK)[data.gender.she].getAttribute('value');
-            expect(text).toEqual(data.gender.valueShe);
+            const input = $$(sel.genderTypeK)[data.gender.she[0]].click();
+            const text = $$(sel.genderTypeK)[data.gender.she[0]].getAttribute('value');
+            expect(text).toEqual(data.gender.she[1]);
         });
 
         it('TC-036 Gender choice click on It', function () {      //TC-026
-            const input = $$(sel.genderTypeK)[data.gender.it].click();
-            const text = $$(sel.genderTypeK)[data.gender.it].getAttribute('value');
-            expect(text).toEqual(data.gender.valueIt);
+            const input = $$(sel.genderTypeK)[data.gender.it[0]].click();
+            const text = $$(sel.genderTypeK)[data.gender.it[0]].getAttribute('value');
+            expect(text).toEqual(data.gender.it[1]);
         });
 
     });
@@ -155,55 +155,56 @@ describe('Inputs', function () {
         it('TC-038 Story type = Overcoming the Monster', function () {      //TC-049
             browser.url('');
             const click = $(sel.storyClickK).click();
-            const input = $$(sel.storyTypeK)[data.storyType.OvercomingTheMonster].getAttribute('title');
+            const input = $$(sel.storyTypeK)[data.storyType.OvercomingTheMonster[0]].getAttribute('title');
             expect(input).toEqual(exp.OvercomingTheMonster);
         });
 
         it('TC-039 Story type = Rebirth', function () {      //TC-050
             browser.url('');
             const click = $(sel.storyClickK).click();
-            const input = $$(sel.storyTypeK)[data.storyType.Rebirth].getAttribute('title');
+            const input = $$(sel.storyTypeK)[data.storyType.Rebirth[0]].getAttribute('title');
             expect(input).toEqual(exp.Rebirth);
         });
 
         it('TC-040 Story type = Quest', function () {      //TC-051
             browser.url('');
             const click = $(sel.storyClickK).click();
-            const input = $$(sel.storyTypeK)[data.storyType.Quest].getAttribute('title');
+            const input = $$(sel.storyTypeK)[data.storyType.Quest[0]].getAttribute('title');
             expect(input).toEqual(exp.Quest);
         });
 
         it('TC-041 Story type = Journey and Return', function () {      //TC-052
             browser.url('');
             const click = $(sel.storyClickK).click();
-            const input = $$(sel.storyTypeK)[data.storyType.JourneyAndReturn].getAttribute('title');
+            const input = $$(sel.storyTypeK)[data.storyType.JourneyAndReturn[0]].getAttribute('title');
             expect(input).toEqual(exp.JourneyAndReturn);
         });
 
         it('TC-042 Story type = Rags and Riches', function () {      //TC-053
             browser.url('');
             const click = $(sel.storyClickK).click();
-            const input = $$(sel.storyTypeK)[data.storyType.RagsAndRiches].getAttribute('title');
+            const input = $$(sel.storyTypeK)[data.storyType.RagsAndRiches[0]].getAttribute('title');
             expect(input).toEqual(exp.RagsAndRiches);
         });
 
         it('TC-043 Story type = Tragedy', function () {      //TC-054
             browser.url('');
             const click = $(sel.storyClickK).click();
-            const input = $$(sel.storyTypeK)[data.storyType.Tragedy].getAttribute('title');
+            const input = $$(sel.storyTypeK)[data.storyType.Tragedy[0]].getAttribute('title');
             expect(input).toEqual(exp.Tragedy);
         });
 
         it('TC-044 Story type = Comedy', function () {      //TC-055
             browser.url('');
             const click = $(sel.storyClickK).click();
-            const input = $$(sel.storyTypeK)[data.storyType.Comedy].getAttribute('title');
+            const input = $$(sel.storyTypeK)[data.storyType.Comedy[0]].getAttribute('title');
             expect(input).toEqual(exp.Comedy);
         });
 
     });
 
     describe('Inputs for Image input field are correct', function () {
+
 
         it('TC-045 Image input file able to browse', function () {   // TC-061
             browser.url('');

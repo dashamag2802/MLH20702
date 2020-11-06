@@ -6,25 +6,22 @@
     "specialChar": " -+-/*,.?#$%@&{}()[]\"`~|\\ <>:;"
   },
   "gender": {
-    "he": 0,
-    "she": 1,
-    "it": 2,
-    "valueHe": "he",
-    "valueShe": "she",
-    "valueIt": "it"
+    "he": [0, "he", "He", "his", "His"],
+    "she": [1, "she", "She", "her", "Her"],
+    "it": [2, "it", "It", "its", "Its"]
   },
   "age": {
     "a123": 123,
     "a1": 1
   },
   "storyType": {
-    "OvercomingTheMonster": 0,
-    "Rebirth": 1,
-    "Quest": 2,
-    "JourneyAndReturn": 3,
-    "RagsAndRiches": 4,
-    "Tragedy": 5,
-    "Comedy": 6
+    "OvercomingTheMonster": [0, "Overcoming"],
+    "Rebirth": [1, "Rebirth"],
+    "Quest": [2, "Quest"],
+    "JourneyAndReturn": [3, "Journey"],
+    "RagsAndRiches": [4, "Rag"],
+    "Tragedy": [5, "Tragedy"],
+    "Comedy": [6, "Two Cats And"]
   },
   "imageChoice": {
     "PNG200px": "PNG200px.png",
