@@ -49,7 +49,7 @@ describe('Checking the main functionality', function () {
 
     describe('Check Story content', function () {
 
-        describe('TC-056 Story content correspond to 1-4 fields', function () {
+        describe('TC-056 Story content correspond to 1-4 fields', function () {      //TC-087
 
             const name = data.name.Hero;
             const gender = data.gender.he;
@@ -123,7 +123,7 @@ describe('Checking the main functionality', function () {
 
     describe('Try again button exist and label is correct', function () {
 
-        it('TC-058 Label for Try again button exist', function () {    //TC-129a
+        it('TC-058 Label for Try again button exist', function () {    //TC-129a   //TC-086
             browser.url('');
             inputValues4AndClick(data.name.Hero, data.gender.he[0], data.age.a1, data.storyType.Quest[0]);
             const label = $(sel.tryAgainK).isDisplayed();

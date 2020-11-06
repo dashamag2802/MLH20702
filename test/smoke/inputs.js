@@ -102,7 +102,6 @@ describe('Inputs', function () {
         it('TC-032 Input digits for name', function () {      //TC-015
             browser.url('');
             const input = $(sel.nameK).setValue(data.name.numbers);
-            //const input1 = $(sel.nameK).addValue(123456789);
             const value = $(sel.nameK).getValue();
             expect(value).toEqual(data.name.numbers);
         });
@@ -113,6 +112,10 @@ describe('Inputs', function () {
             const value = $(sel.nameK).getValue();
             expect(value).toEqual(data.name.specialChar);
         });
+
+
+
+
 
     });
 
@@ -147,6 +150,10 @@ describe('Inputs', function () {
             const value = +$(sel.ageK).getValue();
             expect(value).toEqual(data.age.a1);
         });
+
+
+
+
 
     });
 

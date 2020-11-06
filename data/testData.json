@@ -6,9 +6,9 @@
     "specialChar": " -+-/*,.?#$%@&{}()[]\"`~|\\ <>:;"
   },
   "gender": {
-    "he": [0, "he", "He", "his", "His"],
-    "she": [1, "she", "She", "her", "Her"],
-    "it": [2, "it", "It", "its", "Its"]
+    "he": [0, " he ", " He ", " his ", " His "],
+    "she": [1, " she ", " She ", " her ", " Her "],
+    "it": [2, " it ", " It ", " its ", " Its "]
   },
   "age": {
     "a123": 123,
