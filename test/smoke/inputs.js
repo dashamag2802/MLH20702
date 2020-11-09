@@ -48,12 +48,6 @@ describe('Inputs', function () {
 
     describe('Placeholders and labels are correct', function () {
 
-        it('TC-023a Text for Name placeholder = Hero\'s name', function (){ //TC-013
-            const text = $(sel.nameK).getAttribute('placeholder');
-            expect(text).toEqual(exp.namePlaceholderName);
-        });
-
-
         it('TC-023 Text for Name placeholder = Hero\'s name', function (){ //TC-013
             const text = $(sel.nameK).getAttribute('placeholder');
             expect(text).toEqual(exp.namePlaceholderName);

@@ -21,5 +21,6 @@
   "Tragedy": "Tragedy",
   "Comedy": "Comedy",
   "imagePlaceholderName": "drag and drop your image here or browse",
-  "tryAgainName": "Try again!"
+  "tryAgainName": "Try again!",
+  "age": ["123", "two", "three", "four", "five"]
 }
