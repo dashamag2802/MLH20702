@@ -9,6 +9,8 @@ function inputValues4AndClick (name, gender, age, storyType){
     const create = $(sel.submitButtonK);
     create.waitForClickable();
     create.click();
+    const story = $(sel.tryAgainK);
+    story.waitForClickable();
 }
 
 module.exports = inputValues4AndClick;

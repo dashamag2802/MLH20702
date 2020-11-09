@@ -18,12 +18,12 @@ exports.config = {
     //
     specs: [
         './test/smoke/*.js',
-        './test/regression/*.js'
+        //'./test/regression/*.js'
     ],
     // Patterns to exclude.
     exclude: [
         './test/smoke/labels.js',
-        './test/smoke/mainFunctionality.js',
+        //'./test/smoke/mainFunctionality.js',
         './test/smoke/myTests.js',
         './test/smoke/inputsMain.js'
         // 'path/to/excluded/files'

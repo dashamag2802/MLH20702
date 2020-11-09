@@ -15,6 +15,7 @@
   "submitButtonK": ".ant-btn",
   "imagePlaceholderK": "//span[contains(@class,'anticon-plus')]/following-sibling::div",
   "imageUploadK": ".ant-upload input",
+  "imageStory": ".mb-2",
   "tryAgainK": ".btn-primary",
   "storyClickK": ".ant-select-show-arrow",
   "storyTypeK": ".ant-select-item-option",

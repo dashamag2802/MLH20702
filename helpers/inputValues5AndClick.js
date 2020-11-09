@@ -12,12 +12,16 @@ function inputValues5AndClick (name, gender, age, storyType, imageChoice){
     const remoteFilePath = browser.uploadFile(filePath);
     browser.execute(function () {
         document.getElementsByTagName('input')[6].style.display = "block";
-    })
+    });
     image.waitForDisplayed();
     image.setValue(remoteFilePath);
     const create = $(sel.submitButtonK);
+    browser.pause(5000);
     create.waitForClickable();
     create.click();
+    browser.pause(5000);
+    const story = $(sel.tryAgainK);
+    story.waitForClickable();
 }
 
 module.exports = inputValues5AndClick;
