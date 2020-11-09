@@ -13,7 +13,7 @@ describe('Checking the additional functionality', function () {
 
     describe('Check age', function () {
 
-        it('TC-001 Text is correct for age in the text', function () {     //TC-079
+        /*it('TC-001 Text is correct for age in the text', function () {     //TC-079
             browser.url('');
             for (let i = 0; i < data.checkAge.length; i++){
                 inputValues4AndClick(data.name.LadyBug, data.gender.she[0], data.checkAge[i], data.storyType.Comedy[0]);
@@ -23,8 +23,23 @@ describe('Checking the additional functionality', function () {
                 $(sel.tryAgainK).click();
             }
 
-        });
+        });*/
 
+        it('TC-031 Input English letters for name', function () {      //TC-014
+            browser.url('');
+            const input = $(sel.nameK).setValue(data.name.name71);
+            browser.pause(4000);
+            $(sel.nameK).doubleClick();
+            browser.pause(4000);
+            browser.keys(["\uE009" + "x", "\uE000"]);
+            browser.pause(4000);
+            $(sel.nameK).click();
+            browser.pause(4000);
+            browser.keys(["\uE008" + "\uE016", "\uE000"]);
+            browser.pause(4000);
+            const error = $('.ant-form-item-has-error').isExisting();
+            expect(error).toEqual(true);
+        });
 
     })
 

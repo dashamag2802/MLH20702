@@ -25,7 +25,7 @@ exports.config = {
         './test/smoke/labels.js',
         './test/smoke/mainFunctionality.js',
         './test/smoke/myTests.js',
-        './test/smoke/inputs.js'
+        './test/smoke/inputsMain.js'
         // 'path/to/excluded/files'
     ],
     //
