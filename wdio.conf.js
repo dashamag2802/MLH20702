@@ -23,9 +23,14 @@ exports.config = {
     // Patterns to exclude.
     exclude: [
         './test/smoke/labels.js',
-        //'./test/smoke/mainFunctionality.js',
+        './test/smoke/mainFunctionality.js',
         './test/smoke/myTests.js',
-        './test/smoke/inputsMain.js'
+        './test/smoke/inputsMain.js',
+        './test/smoke/inputsAge.js',
+        './test/smoke/inputsName.js',
+        './test/smoke/inputsGender.js',
+        './test/smoke/inputsStoryType.js',
+        //'.test/smoke/inputsImage.js'
         // 'path/to/excluded/files'
     ],
     //

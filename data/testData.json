@@ -32,7 +32,9 @@
     "PNGMore500px": "PNGmore500px.png",
     "JPEG200px": "JPEG200px.jpg",
     "JPEG500px": "JPEG500px.jpg",
-    "JPEGMore500px": "JPEGmore500px.jpg"
+    "JPEGMore500px": "JPEGmore500px.jpg",
+    "docFile": "docFile.DOCX",
+    "imageSpecialCharacteristics": "& -89u+()'@#$.jpg"
   },
 "testSuits": {
   "TC-089": ["herou's", 11],

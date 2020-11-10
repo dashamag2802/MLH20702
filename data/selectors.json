@@ -12,6 +12,7 @@
   "imageK": "//label[contains(text(),'5. Upload an image (optional)')]",
   "imageCorrectK": ".ant-upload-list-item-image",
   "imageDelete": ".anticon-delete",
+  "imageError": ".ant-message-error",
   "submitButtonK": ".ant-btn",
   "imagePlaceholderK": "//span[contains(@class,'anticon-plus')]/following-sibling::div",
   "imageUploadK": ".ant-upload input",
