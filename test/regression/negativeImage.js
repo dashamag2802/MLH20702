@@ -20,7 +20,7 @@ describe('Inputs for Image input field negative tests', function () {
         expect(error).toEqual(true);
     });
 
-    it('A-061 Input for Image with special characteristics in Name uploaded', function () {   // TC-072
+    it('A-061 Input for Image with special characteristics in Name uploaded', function () {  // TC-072
         browser.url('');
         uploadImageBrowser(data.imageChoice.imageSpecialCharacteristics);
         const image = $(sel.imageCorrectK).getAttribute('alt');
