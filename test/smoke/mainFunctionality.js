@@ -107,7 +107,7 @@ describe('Checking the main functionality', function () {
 
 
 //Anastasia
-
+// code added by Anastasiia
 
 
 
