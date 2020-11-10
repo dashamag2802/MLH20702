@@ -22,6 +22,7 @@ function inputValues5AndClick (name, gender, age, storyType, imageChoice){
     browser.pause(5000);
     const story = $(sel.tryAgainK);
     story.waitForClickable();
+    browser.pause(5000);
 }
 
 module.exports = inputValues5AndClick;

@@ -17,19 +17,26 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/smoke/*.js',
-        //'./test/regression/*.js'
+        //'./test/smoke/*.js',
+        //'./test/smoke/labels.js',
+        //'./test/smoke/inputsMain.js',
+        //'./test/smoke/inputsName.js',
+        //'./test/smoke/inputsGender.js',
+        //'./test/smoke/inputsAge.js',
+        //'./test/smoke/inputsStoryType.js',
+        //'.test/smoke/inputsImage.js',
+        //'./test/smoke/mainFunctionality.js',
+        './test/regression/*.js'
     ],
     // Patterns to exclude.
     exclude: [
-        './test/smoke/labels.js',
-        './test/smoke/mainFunctionality.js',
-        './test/smoke/myTests.js',
-        './test/smoke/inputsMain.js',
-        './test/smoke/inputsAge.js',
-        './test/smoke/inputsName.js',
-        './test/smoke/inputsGender.js',
-        './test/smoke/inputsStoryType.js',
+        //'./test/smoke/labels.js',
+        //'./test/smoke/mainFunctionality.js',
+        //'./test/smoke/inputsMain.js',
+        //'./test/smoke/inputsAge.js',
+        //'./test/smoke/inputsName.js',
+        //'./test/smoke/inputsGender.js',
+        //'./test/smoke/inputsStoryType.js',
         //'.test/smoke/inputsImage.js'
         // 'path/to/excluded/files'
     ],
