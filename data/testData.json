@@ -5,7 +5,13 @@
     "Hero159": "Hero159",
     "numbers": "0123456789",
     "specialChar": " -+-/*,.?#$%@&{}()[]\"`~|\\ <>:;",
-    "name71": "qqqqqqqqqqwwwwwwwwwweeeeeeeeeroooooorrrrrttttttttttyyyyyyyyyyuuuuuuuuuui"
+    "name71": "qqqqqqqqqqwwwwwwwwwweeeeeeeeeroooooorrrrrttttttttttyyyyyyyyyyuuuuuuuuuui",
+    "specialCharA": "A",
+    "specialChar1": 1,
+    "specialChar$": "$",
+    "specialChar70": " -+-/*,.?#$%@&{}()[]\"`~|\\ <>:;-+-/*,.?#$%@&{}()[]\"`~|\\ <>:;-+-/*,.",
+    "specialCharRus": "Герой"
+
   },
   "gender": {
     "he": [0, "he", "He ", " his ", "His "],
