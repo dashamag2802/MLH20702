@@ -22,5 +22,11 @@
   "Comedy": "Comedy",
   "imagePlaceholderName": "drag and drop your image here or browse",
   "tryAgainName": "Try again!",
-  "age": ["123", "two", "three", "four", "five"]
+  "age": ["123", "two", "three", "four", "five"],
+  "textHeG": " He ",
+  "textHisG": " his ",
+  "textSheG": " She ",
+  "textHerG": " her ",
+  "textItG": " It ",
+  "textItsG": " its "
 }

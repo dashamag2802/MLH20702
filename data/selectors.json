@@ -23,5 +23,5 @@
   "storyContentK": ".ant-card-body",
   "storyHeaderK": ".mb-4",
   "storyTextK": ".card-text",
-  "testSel": "aaaaa"
+  "nameField": ".ant-input"
 }

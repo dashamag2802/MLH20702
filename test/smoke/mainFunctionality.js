@@ -11,7 +11,7 @@ const path = require('path');
 
 describe('Checking the main functionality', function () {
 
-    describe('Happy path', function () {
+    /*describe('Happy path', function () {
 
         it('A-062 Create button is clickable after 1-4 are filled in', function () {     //TC-079
             browser.url('');
@@ -101,43 +101,29 @@ describe('Checking the main functionality', function () {
                 expect(error).toEqual(true);
             });
 
-        });
+        });*/
 
         describe('A-068 Story content correspond                ', function () {      //TC-088
 
+            it('A-068/1 Content of the Story with Image include correct input He and Image exist', function () {
+                browser.url('');
+                inputValues5AndClick(data.name.name2G, data.gender.he, data.age.age2G, data.storyType.Rebirth,data.imageChoice.PNG200px);
+                const pic = $(sel.imageStory).getAttribute('src');
+                const result = (pic.length > 50);
+                expect(result).toEqual(true);
+                const text = $(sel.storyTextK).getText();
+                const he_2 = text.includes(exp.textHeG);
+                expect(he_2).toEqual(true);
+            });
 
-//Anastasia
-// code added by Anastasiia
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            it('A-068/2 Content of the Story with Image include correct input His', function () {
+                const text = $(sel.storyTextK).getText();
+                const he_2 = text.includes(exp.textHisG);
+                expect(he_2).toEqual(true);
+            });
         });
 
-        describe('A-069 Story content correspond to 1-5 fields', function () {      //TC-089
+       /* describe('A-069 Story content correspond to 1-5 fields', function () {      //TC-089
 
             const name = data.testSuits["TC-089"][0];
             const gender = data.gender.he;
@@ -302,44 +288,27 @@ describe('Checking the main functionality', function () {
                 expect(error).toEqual(false);
             });
 
-        });
+        });*/
 
 
-        describe('A-073 Story content correspond               ', function () {      //TC-093
+      describe('A-073 Story content correspond', function () {      //TC-093
 
+            it('A-073/1 Content of the Story include correct input He', function () {
+                    browser.url('');
+                    inputValues4AndClick(data.name.nameG, data.gender.he, data.age.ageG, data.storyType.Comedy);
+                    const text = $(sel.storyTextK).getText();
+                    const he_2 = text.includes(exp.textHeG);
+                    expect(he_2).toEqual(true);
+                });
 
-//Anastasia
+                it('A-073/2 Content of the Story include correct input His', function () {
+                    const text = $(sel.storyTextK).getText();
+                    const his_1 = text.includes(exp.textHisG);
+                    expect(his_1).toEqual(true);
+                });
+            });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        });
-
-
+/*
         describe('A-074 Story content correspond to 1-5 fields', function () {      //TC-094
 
             const name = data.testSuits["TC-094"][0];
@@ -715,43 +684,29 @@ describe('Checking the main functionality', function () {
                 expect(error).toEqual(false);
             });
 
-        });
+        }); */
 
         describe('A-083 Story content correspond             ', function () {      //TC-103
 
+            it('A-083/1 Content of the Story with Image include correct input She and Image exist', function () {
+                browser.url('');
+                inputValues5AndClick(data.name.name3G, data.gender.she, data.age.age3G, data.storyType.Quest,data.imageChoice.PNG200px);
+                const pic = $(sel.imageStory).getAttribute('src');
+                const result = (pic.length > 50);
+                expect(result).toEqual(true);
+                const text = $(sel.storyTextK).getText();
+                const he_2 = text.includes(exp.textSheG);
+                expect(he_2).toEqual(true);
+            });
 
-//Anastasia
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            it('A-083/2 Content of the Story with Image include correct input Her and Image exist', function () {
+                const text = $(sel.storyTextK).getText();
+                const he_2 = text.includes(exp.textHerG);
+                expect(he_2).toEqual(true);
+            });
         });
 
-        describe('A-084 Story content correspond to 1-5 fields', function () {      //TC-104
+        /*describe('A-084 Story content correspond to 1-5 fields', function () {      //TC-104
 
             const name = data.testSuits["TC-104"][0];
             const gender = data.gender.she;
@@ -1611,42 +1566,28 @@ describe('Checking the main functionality', function () {
                 expect(error).toEqual(true);
             });
 
+        });*/
+
+        describe('A-105 Story content correspond', function () {      //TC-125
+
+            it('A-105/1 Content of the Story include correct input It', function () {
+                browser.url('');
+                inputValues4AndClick(data.name.name1G, data.gender.it, data.age.age1G, data.storyType.JourneyAndReturn);
+                const text = $(sel.storyTextK).getText();
+                const it_1 = text.includes(exp.textItG)
+                expect(it_1).toEqual(true);
+                });
+
+            it('A-105/2 Content of the Story include correct input It\s', function () {
+                const text = $(sel.storyTextK).getText();
+                const it_1 = text.includes(exp.textItsG)
+                expect(it_1).toEqual(true);
+                });
         });
 
-        describe('A-105 Story content correspond               ', function () {      //TC-125
 
 
-//Anastasia
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        });
-
+/*
         describe('A-106 Story content correspond to 1-4 fields', function () {      //TC-126
 
             const name = data.testSuits["TC-126"][0];
@@ -1791,5 +1732,7 @@ describe('Checking the main functionality', function () {
 
     });
 
-});
 
+
+ */
+})
