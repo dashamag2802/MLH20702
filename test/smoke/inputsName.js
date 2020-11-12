@@ -27,19 +27,32 @@ describe('Inputs for Name input field are correct', function () {
         expect(value).toEqual(data.name.specialChar);
     });
 
-    it('A-034 Inputs                 ', function () {      //TC-017
+    it('A-034 Inputs = "A"', function () {      //TC-017
         browser.url('');
-        // const input = $(sel.nameK).setValue(data.name.specialChar);
-        // const value = $(sel.nameK).getValue();
-        // expect(value).toEqual(data.name.specialChar);
+        $(sel.nameK).setValue(data.name.specialCharA);
+        const value = $(sel.nameK).getValue();
+        expect(value).toEqual(data.name.specialCharA);
     });
 
-    it('A-035 Inputs                 ', function () {      //TC-018
+    it('A-034.1 Inputs = 1', function () {      //TC-017.1
         browser.url('');
-        // const input = $(sel.nameK).setValue(data.name.specialChar);
-        // const value = $(sel.nameK).getValue();
-        // expect(value).toEqual(data.name.specialChar);
+        $(sel.nameK).setValue(data.name.specialChar1);
+        const value = +$(sel.nameK).getValue();
+        expect(value).toEqual(data.name.specialChar1);
     });
 
+    it('A-034.2 Inputs = $', function () {      //TC-017.2
+        browser.url('');
+        $(sel.nameK).setValue(data.name.specialChar$);
+        const value = $(sel.nameK).getValue();
+        expect(value).toEqual(data.name.specialChar$);
+    });
+
+    it('A-035 Inputs = 70 symb', function () {      //TC-018
+        browser.url('');
+        $(sel.nameK).setValue(data.name.specialChar70);
+        const value = $(sel.nameK).getValue();
+        expect(value).toEqual(data.name.specialChar70);
+    });
 
 });

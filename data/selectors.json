@@ -25,4 +25,5 @@
   "storyTextK": ".card-text",
   "ageArrow": ".ant-input-number-handler",
   "ageError": ".ant-form-item-has-error"
+  "symbolMaxErrorA": ".ant-form-item-has-error"
 }
