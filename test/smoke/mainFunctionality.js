@@ -272,7 +272,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-      describe('A-069 Story content correspond rorrespond to 2 field', function () {      //TC-096
+      describe('A-069 Story content correspond to 2 field', function () {      //TC-096
 
             it('A-069-1 Content of the Story include correct input He', function () {
                     browser.url('');
@@ -1677,4 +1677,3 @@ describe('Checking the main functionality', function () {
     });
 
 });
-
