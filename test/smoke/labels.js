@@ -60,7 +60,7 @@ describe('My Little Hero', function () {
             expect(text).toEqual(exp.headerName);
         });
 
-        it('A-010 Label for page header description = Let\'s create your own HERO! It\'s super easy with our application!', function () {        //TC-011
+        it('A-010 Label for page header description = Let\'s create your own HERO! It\'s super easy with our application!', function () {   //TC-011
             const text = $(sel.descriptionK).getText();
             expect(text).toEqual(exp.descriptionName);
         });
@@ -75,17 +75,17 @@ describe('My Little Hero', function () {
             expect(text).toEqual(exp.labelGender);
         });
 
-        it('A-013 Label for age = 3. How old is your hero?', function () {      //TC-031
+        it('A-013 Label for age = 3. How old is your hero?', function () {      //TC-033
             const text = $$(sel.labelK)[2].getAttribute('title');
             expect(text).toEqual(exp.labelAge);
         });
 
-        it('A-014 Label for story = 4. What type of story would you like to read?', function () {      //TC-047
+        it('A-014 Label for story = 4. What type of story would you like to read?', function () {      //TC-049
             const text = $$(sel.labelK)[3].getAttribute('title');
             expect(text).toEqual(exp.labelStory);
         });
 
-        it('A-015 Label for Image upload field = 5. Upload an image (optional)', function () {    //TC-056
+        it('A-015 Label for Image upload field = 5. Upload an image (optional)', function () {    //TC-058
             const text = $(sel.imageK).getAttribute('title');
             expect(text).toEqual(exp.imageName);
         });

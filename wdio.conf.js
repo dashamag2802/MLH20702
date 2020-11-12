@@ -18,18 +18,20 @@ exports.config = {
     //
     specs: [
         //'./test/smoke/*.js',
-        //'./test/smoke/labels.js',
-        //'./test/smoke/inputsMain.js',
+        './test/smoke/labels.js',
+        './test/smoke/inputsMain.js',
         './test/smoke/inputsName.js',
-        //'./test/smoke/inputsGender.js',
-        //'./test/smoke/inputsAge.js',
-        //'./test/smoke/inputsStoryType.js',
-        //'.test/smoke/inputsImage.js',
-        //'./test/smoke/mainFunctionality.js',
-        './test/regression/negativeCreateButton.js',
+        './test/smoke/inputsGender.js',
+        './test/smoke/inputsAge.js',
+        './test/smoke/inputsStoryType.js',
+        './test/smoke/inputsImage.js',
+        './test/smoke/mainFunctionality.js',
+        './test/regression/negativeName.js',
+        './test/regression/negativeGender.js',
         './test/regression/negativeAge.js',
-        //'./test/regression/*.js',
-        './test/regression/negativeName.js'
+        './test/regression/negativeImage.js',
+        './test/regression/negativeCreateButton.js',
+        //'./test/regression/*.js'
     ],
     // Patterns to exclude.
     exclude: [

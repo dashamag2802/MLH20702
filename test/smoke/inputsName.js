@@ -1,8 +1,5 @@
 const data = require('../../data/testData.json');
 const sel = require('../../data/selectors.json');
-const exp = require('../../data/expected.json');
-const uploadImageBrowser = require('../../helpers/uploadImageBrowser');
-const path = require('path');
 
 describe('Inputs for Name input field are correct', function () {
 
@@ -27,28 +24,32 @@ describe('Inputs for Name input field are correct', function () {
         expect(value).toEqual(data.name.specialChar);
     });
 
-    it('A-034 Inputs = "A"', function () {      //TC-017
-        browser.url('');
-        $(sel.nameK).setValue(data.name.specialCharA);
-        const value = $(sel.nameK).getValue();
-        expect(value).toEqual(data.name.specialCharA);
+    describe('A-034 Input one letter, one number, one special symbol for Name', function () {      //TC-017
+
+        it('A-034.1 Inputs = "A"', function () {      //TC-017.1
+            browser.url('');
+            $(sel.nameK).setValue(data.name.specialCharA);
+            const value = $(sel.nameK).getValue();
+            expect(value).toEqual(data.name.specialCharA);
+        });
+
+        it('A-034.2 Inputs = 1', function () {      //TC-017.2
+            browser.url('');
+            $(sel.nameK).setValue(data.name.specialChar1);
+            const value = +$(sel.nameK).getValue();
+            expect(value).toEqual(data.name.specialChar1);
+        });
+
+        it('A-034.3 Inputs = $', function () {      //TC-017.3
+            browser.url('');
+            $(sel.nameK).setValue(data.name.specialChar$);
+            const value = $(sel.nameK).getValue();
+            expect(value).toEqual(data.name.specialChar$);
+        });
+
     });
 
-    it('A-034.1 Inputs = 1', function () {      //TC-017.1
-        browser.url('');
-        $(sel.nameK).setValue(data.name.specialChar1);
-        const value = +$(sel.nameK).getValue();
-        expect(value).toEqual(data.name.specialChar1);
-    });
-
-    it('A-034.2 Inputs = $', function () {      //TC-017.2
-        browser.url('');
-        $(sel.nameK).setValue(data.name.specialChar$);
-        const value = $(sel.nameK).getValue();
-        expect(value).toEqual(data.name.specialChar$);
-    });
-
-    it('A-035 Inputs = 70 symb', function () {      //TC-018
+    it('A-035 Inputs = 70 symbols', function () {      //TC-018
         browser.url('');
         $(sel.nameK).setValue(data.name.specialChar70);
         const value = $(sel.nameK).getValue();
