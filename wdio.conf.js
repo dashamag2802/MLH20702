@@ -26,6 +26,7 @@ exports.config = {
         //'./test/smoke/inputsStoryType.js',
         //'.test/smoke/inputsImage.js',
         //'./test/smoke/mainFunctionality.js',
+        './test/regression/negativeCreateButton.js',
         './test/regression/negativeAge.js',
         //'./test/regression/*.js',
         './test/regression/negativeName.js'
