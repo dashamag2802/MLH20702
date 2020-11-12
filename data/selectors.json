@@ -23,5 +23,8 @@
   "storyContentK": ".ant-card-body",
   "storyHeaderK": ".mb-4",
   "storyTextK": ".card-text",
-  "nameField": ".ant-input"
+  "nameField": ".ant-input",
+  "ageArrow": ".ant-input-number-handler",
+  "ageError": ".ant-form-item-has-error",
+  "symbolMaxErrorA": ".ant-form-item-has-error"
 }
