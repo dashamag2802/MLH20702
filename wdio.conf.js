@@ -26,7 +26,8 @@ exports.config = {
         //'./test/smoke/inputsStoryType.js',
         //'.test/smoke/inputsImage.js',
         //'./test/smoke/mainFunctionality.js',
-        './test/regression/*.js'
+        './test/regression/negativeAge.js'
+        //'./test/regression/*.js'
     ],
     // Patterns to exclude.
     exclude: [
