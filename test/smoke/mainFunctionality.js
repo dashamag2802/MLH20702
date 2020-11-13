@@ -1667,7 +1667,7 @@ describe('Checking the main functionality', function () {
             expect(text).toEqual(exp.tryAgainName);
         });
 
-        it('A-107 Try again button is always active', function () {          //134
+        it('A-107 Try again button is always active', function () {          //TC-134
             browser.url('');
             inputValues4AndClick(data.name.Hero, data.gender.he[0], data.age.a123, data.storyType.Comedy[0]);
             const click = $(sel.tryAgainK).isClickable();
