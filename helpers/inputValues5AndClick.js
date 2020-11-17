@@ -6,25 +6,25 @@ function inputValues5AndClick (name, gender, age, storyType, imageChoice){
     $$(sel.genderK)[gender].click();
     $(sel.ageK).setValue(age);
     $(sel.storyClickK).click();
+    const typeOfStory = $$(sel.storyTypeK)[storyType];
+    typeOfStory.waitForDisplayed(5000);
+    typeOfStory.waitForClickable(5000);
     $$(sel.storyTypeK)[storyType].click();
-
     const image = $(sel.imageUploadK);
     const filePath = path.join(__dirname, `../data/${imageChoice}`);
     const remoteFilePath = browser.uploadFile(filePath);
     browser.execute(function () {
         document.getElementsByTagName('input')[6].style.display = "block";
     });
-    //console.log(image)
     image.waitForDisplayed();
     image.setValue(remoteFilePath);
     const create = $(sel.submitButtonK);
-    browser.pause(5000);
-    create.waitForClickable();
+    create.waitForDisplayed(10000);
+    create.waitForClickable(10000);
     create.click();
-    browser.pause(5000);
     const story = $(sel.tryAgainK);
-    story.waitForClickable();
-    browser.pause(5000);
+    story.waitForDisplayed(10000);
+    story.waitForClickable(10000);
 }
 
 module.exports = inputValues5AndClick;

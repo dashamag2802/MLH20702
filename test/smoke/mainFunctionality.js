@@ -118,7 +118,7 @@ describe('Checking the main functionality', function () {
 
             it('A-065-1 Story content correspond to name', function () {
                 browser.url('');
-                inputValues5AndClick(name, gender[0], age, story[0], data.imageChoice.PNG200px);
+                inputValues5AndClick(name, gender[0], age, story[0], data.imageChoice.JPEG500px);
                 const storyName = $(sel.storyHeaderK);
                 expect(storyName).toHaveTextContaining(`${nameToUpperCase(name)}`);
                 const storyText = $$(sel.storyTextK)[0];
@@ -159,7 +159,7 @@ describe('Checking the main functionality', function () {
 
             it('A-066-1 Story content correspond to name', function () {
                 browser.url('');
-                inputValues5AndClick(name, gender[0], age, story[0], data.imageChoice.JPEG200px);
+                inputValues5AndClick(name, gender[0], age, story[0], data.imageChoice.PNG200px);
                 const storyName = $(sel.storyHeaderK);
                 expect(storyName).toHaveTextContaining(`${nameToUpperCase(name)}`);
                 const storyText = $$(sel.storyTextK)[0];
@@ -200,7 +200,7 @@ describe('Checking the main functionality', function () {
 
             it('A-067-1 Story content correspond to name', function () {
                 browser.url('');
-                inputValues5AndClick(name, gender[0], age, story[0], data.imageChoice.PNG500px);
+                inputValues5AndClick(name, gender[0], age, story[0], data.imageChoice.PNG200px);
                 const storyName = $(sel.storyHeaderK);
                 expect(storyName).toHaveTextContaining(`${nameToUpperCase(name)}`);
                 const storyText = $$(sel.storyTextK)[0];
@@ -578,7 +578,7 @@ describe('Checking the main functionality', function () {
 
             it('A-077-1 Story content correspond to name', function () {
                 browser.url('');
-                inputValues5AndClick(name, gender[0], age, story[0], data.imageChoice.JPEG200px);
+                inputValues5AndClick(name, gender[0], age, story[0], data.imageChoice.PNG200px);
                 const storyName = $(sel.storyHeaderK);
                 expect(storyName).toHaveTextContaining(`${nameToUpperCase(name)}`);
                 const storyText = $$(sel.storyTextK)[0];
@@ -649,7 +649,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-079 Story content correspond to 2 and 4 fitlds', function () {
+        describe('A-079 Story content correspond to 2 and 4 fields', function () {
 
             it('A-079-1 Content of the Story with Image include correct input She and Image exist', function () {
                 browser.url('');

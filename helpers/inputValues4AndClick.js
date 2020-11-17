@@ -6,13 +6,10 @@ function inputValues4AndClick (name, gender, age, storyType){
     $(sel.ageK).setValue(age);
     $(sel.storyClickK).click();
     $$(sel.storyTypeK)[storyType].click();
-    browser.pause(8000)
     const create = $(sel.submitButtonK);
     create.waitForClickable();
-    browser.pause(3000);
     create.click();
     const story = $(sel.tryAgainK);
-    browser.pause(3000);
     story.waitForClickable();
 }
 
