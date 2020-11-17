@@ -2,17 +2,15 @@ const data = require('../../data/testData.json');
 const sel = require('../../data/selectors.json');
 const uploadImageBrowser = require('../../helpers/uploadImageBrowser');
 const path = require('path');
-const { AssertionError } = require('assert');
 
 describe('Inputs for Image input field negative tests', function () {
 
-    it('A-121 Multiple files are not uploaded', function () {   // TC-069
+    it('A-121 Multiple files are not uploaded', function () {
         browser.url('');
         uploadImageBrowser(data.imageChoice.PNG200px);
         const imageChoice = data.imageChoice.JPEG200px;
         const image = $(sel.imageUploadK);
         const filePath = path.join(__dirname, `../../data/${imageChoice}`);
-        const remoteFilePath = browser.uploadFile(filePath);
         browser.execute(function () {
             document.getElementsByTagName('input')[6].style.display = "block";
         })
@@ -33,28 +31,28 @@ describe('Inputs for Image input field negative tests', function () {
         }
     });
 
-    it('A-122 Can not upload doc. file', function () {   // TC-071
+    it('A-122 Can not upload doc. file', function () {
         browser.url('');
         uploadImageBrowser(data.imageChoice.docFile);
         const error = $(sel.imageError).isExisting();
         expect(error).toEqual(true);
     });
 
-    it('A-123 Can not upload xlsx. file', function () {     //072
+    it('A-123 Can not upload xlsx. file', function () {
         browser.url('');
         uploadImageBrowser(data.imageChoice.testXLSX);
         const error = $(sel.imageError).isExisting();
         expect(error).toEqual(true);
     });
 
-    it('A-124 Can not upload pdf. file', function () {     //TC-073
+    it('A-124 Can not upload pdf. file', function () {
         browser.url('');
         uploadImageBrowser(data.imageChoice.testPDF);
         const error = $(sel.imageError).isExisting();
         expect(error).toEqual(true);
     });
 
-    it('A-125 Input for Image with special characteristics in Name uploaded', function () {  // TC-075
+    it('A-125 Input for Image with special characteristics in Name uploaded', function () {
         browser.url('');
         uploadImageBrowser(data.imageChoice.imageSpecialCharacteristics);
         const image = $(sel.imageCorrectK).getAttribute('alt');

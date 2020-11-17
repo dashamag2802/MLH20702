@@ -7,27 +7,26 @@ const inputValues5 = require('../../helpers/inputValues5.js');
 const inputValues5AndClick = require('../../helpers/inputValues5AndClick.js');
 const digitToWords = require('../../helpers/digitToWords.js');
 const nameToUpperCase = require('../../helpers/nameToUpperCase.js');
-const path = require('path');
 
 describe('Checking the main functionality', function () {
 
     describe('Happy path and check Create button', function () {
 
-        it('A-059 Create button is clickable after 1-4 are filled in', function () {     //TC-082
+        it('A-059 Create button is clickable after 1-4 are filled in', function () {
             browser.url('');
             inputValues4(data.name.LadyBug, data.gender.she[0], data.age.a123, data.storyType.Comedy[0]);
             const create = $(sel.submitButtonK).isEnabled();
             expect(create).toEqual(true);
         });
 
-        it('A-060 Create button is clickable after 1-5 are filled in', function () {     //TC-083
+        it('A-060 Create button is clickable after 1-5 are filled in', function () {
             browser.url('');
             inputValues5(data.name.Hero, data.gender.he[0], data.age.a1, data.storyType.Quest[0], data.imageChoice.PNG200px);
             const create = $(sel.submitButtonK).isEnabled();
             expect(create).toEqual(true);
         });
 
-        it('A-061 Create button is clickable after 1-4 are filled in and 1 fill is change', function () {     //TC-084
+        it('A-061 Create button is clickable after 1-4 are filled in and 1 fill is change', function () {
             browser.url('');
             inputValues4(data.name.Hero, data.gender.he[0], data.age.a1, data.storyType.Quest[0]);
             $(sel.nameK).doubleClick();
@@ -37,7 +36,7 @@ describe('Checking the main functionality', function () {
             expect(create).toEqual(true);
         });
 
-        it('A-062 After Create button was clicked Story appears on the same page', function () {     //TC-083
+        it('A-062 After Create button was clicked Story appears on the same page', function () {
             browser.url('');
             inputValues4AndClick(data.name.Hero159, data.gender.he[0], data.age.a123, data.storyType.JourneyAndReturn[0]);
             const tryAgain = $(sel.tryAgainK).isDisplayed();
@@ -48,7 +47,7 @@ describe('Checking the main functionality', function () {
 
     describe('Check Story content', function () {
 
-        describe('A-063 Story content correspond to 1-4 fields', function () {      //TC-090
+        describe('A-063 Story content correspond to 1-4 fields', function () {
 
             const name = data.name.Hero;
             const gender = data.gender.he;
@@ -89,7 +88,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-064 Story content correspond to 2 and 5 fields', function () {      //TC-091
+        describe('A-064 Story content correspond to 2 and 5 fields', function () {
 
             it('A-064-1 Content of the Story with Image include correct input He and Image exist', function () {
                 browser.url('');
@@ -110,7 +109,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-065 Story content correspond to 1-5 fields', function () {      //TC-092
+        describe('A-065 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-092"][0];
             const gender = data.gender.he;
@@ -151,7 +150,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-066 Story content correspond to 1-5 fields', function () {      //TC-093
+        describe('A-066 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-093"][0];
             const gender = data.gender.he;
@@ -192,7 +191,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-067 Story content correspond to 1-5 fields', function () {      //TC-094
+        describe('A-067 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-094"][0];
             const gender = data.gender.he;
@@ -232,7 +231,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-068 Story content correspond to 1-5 fields', function () {      //TC-095
+        describe('A-068 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-095"][0];
             const gender = data.gender.he;
@@ -272,7 +271,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-      describe('A-069 Story content correspond to 2 field', function () {      //TC-096
+      describe('A-069 Story content correspond to 2 field', function () {
 
             it('A-069-1 Content of the Story include correct input He', function () {
                     browser.url('');
@@ -290,7 +289,7 @@ describe('Checking the main functionality', function () {
 
             });
 
-        describe('A-070 Story content correspond to 1-5 fields', function () {      //TC-097
+        describe('A-070 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-097"][0];
             const gender = data.gender.he;
@@ -330,7 +329,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-071 Story content correspond to 1-4 fields', function () {      //TC-098
+        describe('A-071 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-098"][0];
             const gender = data.gender.he;
@@ -370,7 +369,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-072 Story content correspond to 1-4 fields', function () {      //TC-099
+        describe('A-072 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-099"][0];
             const gender = data.gender.he;
@@ -410,7 +409,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-073 Story content correspond to 1-4 fields', function () {      //TC-100
+        describe('A-073 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-100"][0];
             const gender = data.gender.he;
@@ -450,7 +449,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-074 Story content correspond to 1-4 fields', function () {      //TC-101
+        describe('A-074 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-101"][0];
             const gender = data.gender.he;
@@ -490,7 +489,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-075 Story content correspond to 1-4 fields', function () {      //TC-102
+        describe('A-075 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-102"][0];
             const gender = data.gender.he;
@@ -530,7 +529,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-076 Story content correspond to 1-4 fields', function () {      //TC-103
+        describe('A-076 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-103"][0];
             const gender = data.gender.he;
@@ -570,7 +569,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-077 Story content correspond to 1-5 fields', function () {      //TC-104
+        describe('A-077 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-104"][0];
             const gender = data.gender.she;
@@ -610,7 +609,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-078 Story content correspond to 1-5 fields', function () {      //TC-105
+        describe('A-078 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-105"][0];
             const gender = data.gender.she;
@@ -650,7 +649,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-079 Story content correspond to 2 and 4 fitlds', function () {      //TC-106
+        describe('A-079 Story content correspond to 2 and 4 fitlds', function () {
 
             it('A-079-1 Content of the Story with Image include correct input She and Image exist', function () {
                 browser.url('');
@@ -671,7 +670,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-080 Story content correspond to 1-5 fields', function () {      //TC-107
+        describe('A-080 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-107"][0];
             const gender = data.gender.she;
@@ -711,7 +710,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-081 Story content correspond to 1-5 fields', function () {      //TC-108
+        describe('A-081 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-108"][0];
             const gender = data.gender.she;
@@ -751,7 +750,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-082 Story content correspond to 1-5 fields', function () {      //TC-109
+        describe('A-082 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-109"][0];
             const gender = data.gender.she;
@@ -791,7 +790,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-083 Story content correspond to 1-4 fields', function () {      //TC-110
+        describe('A-083 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-110"][0];
             const gender = data.gender.she;
@@ -831,7 +830,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-084 Story content correspond to 1-4 fields', function () {      //TC-111
+        describe('A-084 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-111"][0];
             const gender = data.gender.she;
@@ -871,7 +870,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-085 Story content correspond to 1-4 fields', function () {      //TC-112
+        describe('A-085 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-112"][0];
             const gender = data.gender.she;
@@ -911,7 +910,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-086 Story content correspond to 1-4 fields', function () {      //TC-113
+        describe('A-086 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-113"][0];
             const gender = data.gender.she;
@@ -951,7 +950,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-087 Story content correspond to 1-4 fields', function () {      //TC-114
+        describe('A-087 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-114"][0];
             const gender = data.gender.she;
@@ -991,7 +990,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-088 Story content correspond to 1-4 fields', function () {      //TC-115
+        describe('A-088 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-115"][0];
             const gender = data.gender.she;
@@ -1031,7 +1030,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-089 Story content correspond to 1-4 fields', function () {      //TC-116
+        describe('A-089 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-116"][0];
             const gender = data.gender.she;
@@ -1071,7 +1070,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-090 Story content correspond to 1-5 fields', function () {      //TC-117
+        describe('A-090 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-117"][0];
             const gender = data.gender.she;
@@ -1111,7 +1110,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-091 Story content correspond to 1-5 fields', function () {      //TC-118
+        describe('A-091 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-118"][0];
             const gender = data.gender.it;
@@ -1151,7 +1150,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-092 Story content correspond to 1-5 fields', function () {      //TC-119
+        describe('A-092 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-119"][0];
             const gender = data.gender.it;
@@ -1191,7 +1190,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-093 Story content correspond to 1-5 fields', function () {      //TC-120
+        describe('A-093 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-120"][0];
             const gender = data.gender.it;
@@ -1231,7 +1230,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-094 Story content correspond to 1-5 fields', function () {      //TC-121
+        describe('A-094 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-121"][0];
             const gender = data.gender.it;
@@ -1271,7 +1270,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-095 Story content correspond to 1-5 fields', function () {      //TC-122
+        describe('A-095 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-122"][0];
             const gender = data.gender.he;
@@ -1311,7 +1310,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-096 Story content correspond to 1-5 fields', function () {      //TC-123
+        describe('A-096 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-123"][0];
             const gender = data.gender.it;
@@ -1351,7 +1350,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-097 Story content correspond to 1-5 fields', function () {      //TC-124
+        describe('A-097 Story content correspond to 1-5 fields', function () {
 
             const name = data.testSuits["TC-124"][0];
             const gender = data.gender.it;
@@ -1391,7 +1390,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-098 Story content correspond to 1-4 fields', function () {      //TC-125
+        describe('A-098 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-125"][0];
             const gender = data.gender.it;
@@ -1431,7 +1430,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-099 Story content correspond to 1-4 fields', function () {      //TC-126
+        describe('A-099 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-126"][0];
             const gender = data.gender.it;
@@ -1471,7 +1470,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-100 Story content correspond to 1-4 fields', function () {      //TC-127
+        describe('A-100 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-127"][0];
             const gender = data.gender.it;
@@ -1511,7 +1510,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-101 Story content correspond to 2 field', function () {      //TC-128
+        describe('A-101 Story content correspond to 2 field', function () {
 
             it('A-101-1 Content of the Story include correct input It', function () {
                 browser.url('');
@@ -1529,7 +1528,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-102 Story content correspond to 1-4 fields', function () {      //TC-129
+        describe('A-102 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-129"][0];
             const gender = data.gender.it;
@@ -1569,7 +1568,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-103 Story content correspond to 1-4 fields', function () {      //TC-130
+        describe('A-103 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-130"][0];
             const gender = data.gender.it;
@@ -1609,7 +1608,7 @@ describe('Checking the main functionality', function () {
 
         });
 
-        describe('A-104 Story content correspond to 1-4 fields', function () {      //TC-131
+        describe('A-104 Story content correspond to 1-4 fields', function () {
 
             const name = data.testSuits["TC-131"][0];
             const gender = data.gender.it;
@@ -1653,21 +1652,21 @@ describe('Checking the main functionality', function () {
 
     describe('Try again button exist and label is correct', function () {
 
-        it('A-105 Label for Try again button exist', function () {          //TC-132    //TC-089
+        it('A-105 Label for Try again button exist', function () {
             browser.url('');
             inputValues4AndClick(data.name.Hero, data.gender.he[0], data.age.a1, data.storyType.Quest[0]);
             const label = $(sel.tryAgainK).isDisplayed();
             expect(label).toEqual(true);
         });
 
-        it('A-106 Label for Try again button = Try again!', function () {     //TC-133
+        it('A-106 Label for Try again button = Try again!', function () {
             browser.url('');
             inputValues4AndClick(data.name.Hero, data.gender.he[0], data.age.a1, data.storyType.Rebirth[0]);
             const text = $(sel.tryAgainK).getText();
             expect(text).toEqual(exp.tryAgainName);
         });
 
-        it('A-107 Try again button is always active', function () {          //TC-134
+        it('A-107 Try again button is always active', function () {
             browser.url('');
             inputValues4AndClick(data.name.Hero, data.gender.he[0], data.age.a123, data.storyType.Comedy[0]);
             const click = $(sel.tryAgainK).isClickable();
